@@ -1,0 +1,19 @@
+{
+    "name":"ATG_TASK_2",
+    "manifest_version": 3,
+    "version": "1.0",
+    "description": "Simple google chrome extension.",
+    "permissions" : ["tabs","storage"],
+    "action": {
+        "default_popup": "popup.html"
+    },
+   
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ]
+}
+
+
